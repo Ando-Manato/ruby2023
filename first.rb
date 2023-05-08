@@ -28,3 +28,27 @@ end
 puts
 #putsはprintlnと同じ
 
+ia = [1,5,10]
+puts ia[1]
+sa = ["a","b"]
+puts sa[1]
+xa = [1,"a",10,[5,3]]
+puts xa[3][0]
+l = 0
+while l < ia.length
+    print ia[l]
+    print ","
+    l += 1
+end
+puts
+
+xa.each do |i|
+    print i
+    print ","
+end
+puts
+
+7.times do
+    print "*"
+end
+puts
