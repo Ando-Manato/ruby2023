@@ -19,3 +19,12 @@ if i % 2 == 0
 else
     puts "odd"
 end
+
+i = 5
+while i > 0
+    print "#"
+    i -= 1
+end
+puts
+#putsはprintlnと同じ
+
