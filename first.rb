@@ -52,3 +52,11 @@ puts
     print "*"
 end
 puts
+
+s = gets #キーボードから受け取る
+#s = s.chomp
+s.chomp! #改行コードを削除
+puts "##"+s+"**"
+p s
+p 1
+p "1"
