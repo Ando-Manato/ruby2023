@@ -3,9 +3,9 @@ print "name?"
 name = gets
 #File.new("name.txt","w")
 
-file = File.open("name.txt","a")
-file.puts name
-file.close
+File.open("name.txt","a") do |file|
+    file.puts name
+end
 
 
 #name.txt　というファイルに変数nameの値を保存
