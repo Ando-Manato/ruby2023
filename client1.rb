@@ -11,22 +11,6 @@ s.puts
 
 num = 0
 
-"""
-while line = s.gets
-    line.chomp!
-
-    p line
-end
-"""
-"""
-while line = s.gets and num < 10
-    line.chomp!
-    p line
-    num += 1
-    
-end
-"""
-
 while line = s.gets
     line.chomp!
     break if line == ""
