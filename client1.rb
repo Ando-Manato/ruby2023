@@ -6,8 +6,31 @@ require "socket"
 
 port = 80
 s = TCPSocket.open("www.is.kyusan-u.ac.jp",port)
-s.puts("GET /~toshi/")
+s.puts("GET /~toshi/ HTTP/1.0")
+s.puts
+
+num = 0
+
+"""
 while line = s.gets
+    line.chomp!
+
+    p line
+end
+"""
+"""
+while line = s.gets and num < 10
+    line.chomp!
+    p line
+    num += 1
+    
+end
+"""
+
+while line = s.gets
+    line.chomp!
+    break if line == ""
     puts line
 end
+
 s.close
