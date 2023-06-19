@@ -8,7 +8,8 @@ host = ARGV[0]
 path = ARGV[1]
 port = 80
 s = TCPSocket.open(host,port)
-s.puts("GET #{path} HTTP/1.0")
+s.puts("GET #{path} HTTP/1.1")
+s.puts("Host: #{host}") #"Host:" + host
 s.puts
 
 is_body = false
