@@ -14,8 +14,9 @@ def server s
     #puts path
     path1 = path[0]
 
+    
+    puts path
     '''
-    puts path1 
     puts path2
     puts path3
     puts path4
